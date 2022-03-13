@@ -23,7 +23,8 @@ public class starterAdding {
                 System.out.println("\nCalculator Menu\n" +
                         "---------------\n" +
                         "0. Exit Program\n" +
-                        "1. Addition\n" );
+                        "1. Addition\n" +
+                        "2. Subtraction\n" );
             }
             System.out.print("Enter Menu Selection: ");
             operation = scnr.nextInt();
@@ -50,6 +51,21 @@ public class starterAdding {
                 tc++;
                 sum=sum+result;
                 continue;
+            }
+            
+            if (operation == 2) {
+                vc=0;
+
+                System.out.print("Enter first operand: ");
+                first_operend = scnr.nextDouble();
+                System.out.print("Enter second operand: ");
+                second_operend = scnr.nextDouble();
+                result = first_operend - second_operend;
+                System.out.println("\nCurrent Result: " + result);
+                tc++;
+                sum=sum+result;
+                continue;
+
             }
 
 
